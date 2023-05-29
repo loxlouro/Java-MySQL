@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmultithreadserver.controllers.EditWorkerController">
+   <children>
+      <TextField fx:id="worker_firstname_field" layoutX="225.0" layoutY="143.0" promptText="Firstname" />
+      <TextField fx:id="worker_secondname_field" layoutX="225.0" layoutY="187.0" promptText="Secondname" />
+      <TextField fx:id="worker_post_field" layoutX="225.0" layoutY="237.0" promptText="Post" />
+      <Text fx:id="worker_id_text" layoutX="271.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="worker_id: " />
+      <Button fx:id="discardButton" layoutX="463.0" layoutY="336.0" mnemonicParsing="false" onAction="#onDiscardButtonAction" text="Discard" />
+      <Button fx:id="applyButton" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" onAction="#onApplyButtonAction" text="Apply" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="766.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxmultithreadserver.controllers.UserListController">
+   <children>
+      <TableView fx:id="UserTableView" layoutX="86.0" layoutY="64.0" prefHeight="650.0" prefWidth="1200.0">
+        <columns>
+          <TableColumn fx:id="worker_id_column" prefWidth="75.0" text="worker_id" />
+          <TableColumn fx:id="worker_firstname_column" prefWidth="316.79991149902344" text="worker_firstname" />
+            <TableColumn fx:id="worker_secondname_column" prefWidth="328.80010986328125" text="worker_secondname" />
+            <TableColumn fx:id="worker_group_column" prefWidth="255.2000732421875" text="worker_group" />
+            <TableColumn fx:id="worker_post_column" prefWidth="211.199951171875" text="worker_post" />
+        </columns>
+      </TableView>
+      <Button fx:id="AddUserButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddUserButtonAction" text="Add" />
+      <Button fx:id="DeleteUserButton" layoutX="53.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDeleteUserButtonAction" text="Delete">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="EditUserButton" layoutX="104.0" layoutY="14.0" mnemonicParsing="false" onAction="#onEditUserButtonAction" text="Edit" />
+      <Button fx:id="ApplyChangesButton" layoutX="1304.0" layoutY="726.0" mnemonicParsing="false" onAction="#onApplyButtonAction" text="Apply" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="DiscardChangesButton" layoutX="1248.0" layoutY="726.0" mnemonicParsing="false" onAction="#onDiscardButtonAction" text="Discard" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="75.0" />
+   </children>
+</AnchorPane>
