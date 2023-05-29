@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="mainViewRoot" prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.MainShowTablesController">
+   <children>
+      <HBox prefHeight="720.0" prefWidth="1366.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="TablesMenu" mnemonicParsing="false" text="Tables">
+                  <items>
+
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <BorderPane fx:id="tablePane" prefHeight="720.0" prefWidth="1131.0">
+               <top>
+                  <TableView fx:id="objectTableTableView" prefHeight="720.0" prefWidth="1067.0" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
